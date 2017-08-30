@@ -1,0 +1,94 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto' !important;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 220px;
+  height: 100%;
+  background: #444;
+}
+
+#nickname {
+  display: block;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  background: #111;
+}
+
+#channelList {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+  #channelList li {
+    margin: 0;
+    padding: 7px 20px;
+    cursor: pointer;
+    color: #999;
+  }
+
+  #channelList .active {
+    color: white;
+    font-weight: bold;
+  }
+
+#mainContainer {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  height: 100%;
+  width: calc(100% - 220px);
+}
+
+#activeChannelMessagesWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 101px);
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+#activeChannelMessages {
+  position: absolute;
+  bottom: 20px;
+}
+
+.message {
+  margin: 0;
+  padding: 5px 0 10px 35px;
+  border-bottom: 1px solid transparent;
+}
+
+  .message .nickname {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+  .message .text {
+    font-weight: normal;
+  }
+
+#inputBox {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 55px 30px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+  font-family: monospace;
+  width: calc(100% - 300px);
+}
