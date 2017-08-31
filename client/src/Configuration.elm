@@ -1,10 +1,11 @@
-module Configuration exposing (..) -- Yes, we want to expose everything. 
-
-
+module Configuration exposing (..)
 
 
 webSocketUrl : String
-webSocketUrl = "ws://localhost:8080"
+webSocketUrl =
+    "ws://edvard-edb.plysjbyen.net:33446"
+
+
 
 -- BUG!! ???
 -- webSocketUrl = "ws://localhost:8080/"
